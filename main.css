@@ -1,0 +1,100 @@
+
+.octodex {
+  list-style-type: none;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  left: -30px;
+}
+
+.octocat {
+  display: inline-block;
+  float: left;
+}
+
+.octocat img {
+  width: 400px;
+  display: inline-block;
+  border: lightgrey solid 1.75px;
+  border-radius: 1%;
+  margin: 0 15px 5px 0px;
+}
+
+.image-footer {
+  width: 397px;
+  height: 40px;
+  margin: 5px;
+  font-family: Arial;
+  font-weight:bold;
+  font-size: .85em;
+  color: lightgrey;
+  border-bottom: lightgrey solid 2px;
+}
+
+.image-footer::before {
+    content: "";
+    height: 0;
+    width: 0;
+    border: 7.5px solid transparent;
+    border-top-color: lightgrey;
+    display: block;
+    position: relative;
+    right: 7px;
+    bottom: 10px;
+    float: right;
+}
+
+.image-number {
+  display: inline-block;
+  float: left;
+  position: relative;
+  top: 10px;
+
+}
+
+.image-number::before {
+  content: "#";
+  margin-right: .5px;
+  color: lightgrey;
+}
+
+.image-caption {
+  display: inline-block;
+  float: right;
+  color: grey;
+  font-weight: bold;
+  margin-bottom: 5px;
+  margin-top: -3px;
+}
+
+.image-caption > span {
+  position: relative;
+  bottom: 12px;
+  left: 55px;
+}
+
+.image-caption > a {
+  position: relative;
+  bottom: 12px;
+  left: 55px;
+}
+
+.authors {
+  list-style-type: none;
+  display: inline-block;
+}
+
+.authors img {
+  width: 25px;
+  margin: 5px 2px;
+  border: none;
+  position: relative;
+  top: 2px;
+  left: 15px;
+  border-radius: 15%;
+}
+
+a:link {
+  text-decoration: none;
+  color: black;
+}
